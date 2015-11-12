@@ -1,0 +1,312 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3178962B1BF3FD5800F10BC5 /* BullsEye.html in Resources */ = {isa = PBXBuildFile; fileRef = 3178962A1BF3FD5800F10BC5 /* BullsEye.html */; };
+		3178962E1BF40CE800F10BC5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3178962C1BF40CE800F10BC5 /* Default-568h@2x.png */; };
+		3178962F1BF40CE800F10BC5 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3178962D1BF40CE800F10BC5 /* Default@2x.png */; };
+		318BE9E51BF2E9830042F5B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 318BE9E41BF2E9830042F5B8 /* main.m */; };
+		318BE9E81BF2E9830042F5B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 318BE9E71BF2E9830042F5B8 /* AppDelegate.m */; };
+		318BE9EB1BF2E9830042F5B8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 318BE9EA1BF2E9830042F5B8 /* ViewController.m */; };
+		318BE9EE1BF2E9830042F5B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 318BE9EC1BF2E9830042F5B8 /* Main.storyboard */; };
+		318BE9F01BF2E9830042F5B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 318BE9EF1BF2E9830042F5B8 /* Assets.xcassets */; };
+		318BE9FC1BF319910042F5B8 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 318BE9FB1BF319910042F5B8 /* AboutViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3178962A1BF3FD5800F10BC5 /* BullsEye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BullsEye.html; sourceTree = "<group>"; };
+		3178962C1BF40CE800F10BC5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3178962D1BF40CE800F10BC5 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		318BE9E01BF2E9830042F5B8 /* Bull's Eye Two.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bull's Eye Two.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		318BE9E41BF2E9830042F5B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		318BE9E61BF2E9830042F5B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		318BE9E71BF2E9830042F5B8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		318BE9E91BF2E9830042F5B8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		318BE9EA1BF2E9830042F5B8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		318BE9ED1BF2E9830042F5B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		318BE9EF1BF2E9830042F5B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		318BE9F41BF2E9830042F5B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		318BE9FA1BF319910042F5B8 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		318BE9FB1BF319910042F5B8 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		318BE9DD1BF2E9830042F5B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		318BE9D71BF2E9830042F5B8 = {
+			isa = PBXGroup;
+			children = (
+				318BE9E21BF2E9830042F5B8 /* Bull's Eye Two */,
+				318BE9E11BF2E9830042F5B8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		318BE9E11BF2E9830042F5B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				318BE9E01BF2E9830042F5B8 /* Bull's Eye Two.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		318BE9E21BF2E9830042F5B8 /* Bull's Eye Two */ = {
+			isa = PBXGroup;
+			children = (
+				3178962C1BF40CE800F10BC5 /* Default-568h@2x.png */,
+				3178962D1BF40CE800F10BC5 /* Default@2x.png */,
+				3178962A1BF3FD5800F10BC5 /* BullsEye.html */,
+				318BE9E61BF2E9830042F5B8 /* AppDelegate.h */,
+				318BE9E71BF2E9830042F5B8 /* AppDelegate.m */,
+				318BE9E91BF2E9830042F5B8 /* ViewController.h */,
+				318BE9EA1BF2E9830042F5B8 /* ViewController.m */,
+				318BE9FA1BF319910042F5B8 /* AboutViewController.h */,
+				318BE9FB1BF319910042F5B8 /* AboutViewController.m */,
+				318BE9EC1BF2E9830042F5B8 /* Main.storyboard */,
+				318BE9EF1BF2E9830042F5B8 /* Assets.xcassets */,
+				318BE9F41BF2E9830042F5B8 /* Info.plist */,
+				318BE9E31BF2E9830042F5B8 /* Supporting Files */,
+			);
+			path = "Bull's Eye Two";
+			sourceTree = "<group>";
+		};
+		318BE9E31BF2E9830042F5B8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				318BE9E41BF2E9830042F5B8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		318BE9DF1BF2E9830042F5B8 /* Bull's Eye Two */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 318BE9F71BF2E9830042F5B8 /* Build configuration list for PBXNativeTarget "Bull's Eye Two" */;
+			buildPhases = (
+				318BE9DC1BF2E9830042F5B8 /* Sources */,
+				318BE9DD1BF2E9830042F5B8 /* Frameworks */,
+				318BE9DE1BF2E9830042F5B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bull's Eye Two";
+			productName = "Bull's Eye Two";
+			productReference = 318BE9E01BF2E9830042F5B8 /* Bull's Eye Two.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		318BE9D81BF2E9830042F5B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Eric Huang";
+				TargetAttributes = {
+					318BE9DF1BF2E9830042F5B8 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = 318BE9DB1BF2E9830042F5B8 /* Build configuration list for PBXProject "Bull's Eye Two" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 318BE9D71BF2E9830042F5B8;
+			productRefGroup = 318BE9E11BF2E9830042F5B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				318BE9DF1BF2E9830042F5B8 /* Bull's Eye Two */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		318BE9DE1BF2E9830042F5B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3178962B1BF3FD5800F10BC5 /* BullsEye.html in Resources */,
+				3178962E1BF40CE800F10BC5 /* Default-568h@2x.png in Resources */,
+				3178962F1BF40CE800F10BC5 /* Default@2x.png in Resources */,
+				318BE9F01BF2E9830042F5B8 /* Assets.xcassets in Resources */,
+				318BE9EE1BF2E9830042F5B8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		318BE9DC1BF2E9830042F5B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				318BE9EB1BF2E9830042F5B8 /* ViewController.m in Sources */,
+				318BE9E81BF2E9830042F5B8 /* AppDelegate.m in Sources */,
+				318BE9FC1BF319910042F5B8 /* AboutViewController.m in Sources */,
+				318BE9E51BF2E9830042F5B8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		318BE9EC1BF2E9830042F5B8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				318BE9ED1BF2E9830042F5B8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		318BE9F51BF2E9830042F5B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		318BE9F61BF2E9830042F5B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		318BE9F81BF2E9830042F5B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Bull's Eye Two/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.EricHuang.IOSLearning.www.Bull-s-Eye-Two";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		318BE9F91BF2E9830042F5B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Bull's Eye Two/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.EricHuang.IOSLearning.www.Bull-s-Eye-Two";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		318BE9DB1BF2E9830042F5B8 /* Build configuration list for PBXProject "Bull's Eye Two" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				318BE9F51BF2E9830042F5B8 /* Debug */,
+				318BE9F61BF2E9830042F5B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		318BE9F71BF2E9830042F5B8 /* Build configuration list for PBXNativeTarget "Bull's Eye Two" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				318BE9F81BF2E9830042F5B8 /* Debug */,
+				318BE9F91BF2E9830042F5B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 318BE9D81BF2E9830042F5B8 /* Project object */;
+}
