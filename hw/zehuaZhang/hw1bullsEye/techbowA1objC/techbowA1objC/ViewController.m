@@ -96,7 +96,7 @@
     
     NSString *message = [NSString stringWithFormat:@"You scored %ld points", (long)points];
     UIAlertController *alert = [UIAlertController alertControllerWithTitle: title message: message preferredStyle: UIAlertControllerStyleAlert];
-    UIAlertAction *action = [UIAlertAction actionWithTitle:title style:UIAlertActionStyleDefault
+    UIAlertAction *action = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
                                             handler:^(UIAlertAction * _Nonnull action) {
         [self startNewRound];
         [self updateLabels];
