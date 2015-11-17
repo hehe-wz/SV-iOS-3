@@ -10,6 +10,9 @@
 
 #import "InfiniteCircleView.h"
 
+@interface InfiniteCircleViewController () <UITextFieldDelegate>
+@end
+
 @implementation InfiniteCircleViewController
 
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -22,6 +25,20 @@
 
 - (void)loadView {
   self.view = [[InfiniteCircleView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+  
+  UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(40, 70, 240, 30)];
+  textField.borderStyle = UITextBorderStyleRoundedRect;
+  textField.placeholder = @"Please type something";
+  textField.keyboardType = UIKeyboardTypeEmailAddress;
+  textField.returnKeyType = UIReturnKeyDone;
+  textField.delegate = self;
+  
+  [self.view addSubview:textField];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+  [textField resignFirstResponder];
+  return YES;
 }
 
 @end
