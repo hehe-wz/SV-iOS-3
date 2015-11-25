@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F157AE61C00FBF2001B2A95 /* ImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F157AE51C00FBF2001B2A95 /* ImageStore.m */; };
 		3F54D7C11BF904AD00442F72 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F54D7C01BF904AD00442F72 /* HeaderView.xib */; };
 		3F54D7C51BF9162300442F72 /* ItemDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F54D7C31BF9162300442F72 /* ItemDetailViewController.m */; };
 		3F54D7C61BF9162300442F72 /* ItemDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F54D7C41BF9162300442F72 /* ItemDetailViewController.xib */; };
@@ -21,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F157AE41C00FBF2001B2A95 /* ImageStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageStore.h; sourceTree = "<group>"; };
+		3F157AE51C00FBF2001B2A95 /* ImageStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageStore.m; sourceTree = "<group>"; };
 		3F54D7C01BF904AD00442F72 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		3F54D7C21BF9162300442F72 /* ItemDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemDetailViewController.h; sourceTree = "<group>"; };
 		3F54D7C31BF9162300442F72 /* ItemDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemDetailViewController.m; sourceTree = "<group>"; };
@@ -81,6 +84,8 @@
 				3F54D7C21BF9162300442F72 /* ItemDetailViewController.h */,
 				3F54D7C31BF9162300442F72 /* ItemDetailViewController.m */,
 				3F54D7C41BF9162300442F72 /* ItemDetailViewController.xib */,
+				3F157AE41C00FBF2001B2A95 /* ImageStore.h */,
+				3F157AE51C00FBF2001B2A95 /* ImageStore.m */,
 				3F55D9111BF7C51B0075B334 /* ItemStore.h */,
 				3F55D9121BF7C51B0075B334 /* ItemStore.m */,
 				3F54D7C01BF904AD00442F72 /* HeaderView.xib */,
@@ -180,6 +185,7 @@
 				3F55D90D1BF7C0A50075B334 /* ItemsViewController.m in Sources */,
 				3F55D8F91BF7BFBB0075B334 /* AppDelegate.m in Sources */,
 				3F55D8F61BF7BFBB0075B334 /* main.m in Sources */,
+				3F157AE61C00FBF2001B2A95 /* ImageStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

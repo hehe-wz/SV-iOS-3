@@ -9,6 +9,7 @@
 #import "ItemStore.h"
 
 #import "Item.h"
+#import "ImageStore.h"
 
 @implementation ItemStore {
   NSMutableArray *_allItems;
@@ -32,7 +33,12 @@
 
 - (instancetype)initPriate {
   if (self = [super init]) {
-    _allItems = [[NSMutableArray alloc] init];
+//    _allItems = [[NSMutableArray alloc] init];
+    NSString *path = [self itemArchivePath];
+    _allItems = [NSKeyedUnarchiver unarchiveObjectWithFile:path];
+    if (_allItems == nil) {
+      _allItems = [[NSMutableArray alloc] init];
+    }
   }
   return self;
 }
@@ -50,6 +56,7 @@
 }
 
 - (void)removeItemAtIndex:(NSUInteger)index {
+  [[ImageStore sharedStore] deleteImageForKey:((Item *)_allItems[index]).itemKey];
   [_allItems removeObjectAtIndex:index];
 }
 
@@ -57,6 +64,22 @@
   Item *item = _allItems[fromIndex];
   [self removeItemAtIndex:fromIndex];
   [_allItems insertObject:item atIndex:toIndex];
+}
+
+- (BOOL)saveChanges {
+  NSString *path = [self itemArchivePath];
+  NSLog(@"Save change at %@", path);
+  return [NSKeyedArchiver archiveRootObject:_allItems toFile:path];
+}
+
+#pragma mark - get archive path
+
+- (NSString *)itemArchivePath {
+  NSArray *documentDirectories =
+  NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+  
+  NSString *documentDirectory = [documentDirectories firstObject];
+  return [documentDirectory stringByAppendingPathComponent:@"items.archive"];
 }
 
 @end

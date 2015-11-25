@@ -21,9 +21,9 @@
 
 - (instancetype)init {
   if (self = [super initWithStyle:UITableViewStylePlain]) {
-    for (int i = 0; i < 5; i++) {
-      [[ItemStore sharedStore] createItem];
-    }
+//    for (int i = 0; i < 5; i++) {
+//      [[ItemStore sharedStore] createItem];
+//    }
     self.tableView.dataSource = self;
     
     self.navigationItem.title = @"Item List";

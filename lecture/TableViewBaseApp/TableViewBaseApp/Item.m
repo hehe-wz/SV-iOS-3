@@ -48,10 +48,13 @@
   // Did the superclass's designated initializer succeed?
   if (self) {
     // Give the instance variables initial values
-    self.itemName = name;
-    self.serialNumber = sNumber;
-    self.valueInDollars = value;
-    self.dateCreated = [[NSDate alloc] init];
+    _itemName = name;
+    _serialNumber = sNumber;
+    _valueInDollars = value;
+    _dateCreated = [[NSDate alloc] init];
+    
+    NSUUID *uuid = [[NSUUID alloc] init];
+    _itemKey = [uuid UUIDString];
   }
   
   // Return the address of the newly initialized object
@@ -78,6 +81,27 @@
 - (void)dealloc
 {
   NSLog(@"Destroyed: %@", self);
+}
+
+#pragma mark - NSCoding
+
+- (void)encodeWithCoder:(NSCoder *)aCoder {
+  [aCoder encodeObject:self.itemName forKey:@"itemName"];
+  [aCoder encodeObject:self.serialNumber forKey:@"serialNumber"];
+  [aCoder encodeObject:self.dateCreated forKey:@"dateCreated"];
+  [aCoder encodeObject:self.itemKey forKey:@"itemKey"];
+  [aCoder encodeInt:self.valueInDollars forKey:@"valueInDollars"];
+}
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+  if (self = [super init]) {
+    _itemName = [aDecoder decodeObjectForKey:@"itemName"];
+    _serialNumber = [aDecoder decodeObjectForKey:@"serialNumber"];
+    _dateCreated = [aDecoder decodeObjectForKey:@"dateCreated"];
+    _itemKey = [aDecoder decodeObjectForKey:@"itemKey"];
+    _valueInDollars = [aDecoder decodeIntForKey:@"valueInDollars"];
+  }
+  return self;
 }
 
 @end
