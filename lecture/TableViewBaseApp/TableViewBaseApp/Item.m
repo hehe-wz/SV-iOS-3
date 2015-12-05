@@ -1,13 +1,25 @@
+//
+//  Item.m
+//  TableViewBaseApp
+//
+//  Created by Zun Wang on 11/28/15.
+//  Copyright © 2015 ZW. All rights reserved.
+//
+
 #import "Item.h"
-
-@interface Item ()
-
-@property (nonatomic, strong) NSDate *dateCreated;
-
-@end
 
 @implementation Item
 
+- (void)awakeFromInsert {
+  [super awakeFromInsert];
+  
+  self.dateCreated = [[NSDate alloc] init];
+  
+  NSUUID *uuid = [[NSUUID alloc] init];
+  self.itemKey = [uuid UUIDString];
+}
+
+// Insert code here to add functionality to your managed object subclass
 + (id)randomItem
 {
   // Create an array of three adjectives
@@ -48,13 +60,13 @@
   // Did the superclass's designated initializer succeed?
   if (self) {
     // Give the instance variables initial values
-    _itemName = name;
-    _serialNumber = sNumber;
-    _valueInDollars = value;
-    _dateCreated = [[NSDate alloc] init];
+    self.itemName = name;
+    self.serialNumber = sNumber;
+    self.valueInDollars = value;
+    self.dateCreated = [[NSDate alloc] init];
     
     NSUUID *uuid = [[NSUUID alloc] init];
-    _itemKey = [uuid UUIDString];
+    self.itemKey = [uuid UUIDString];
   }
   
   // Return the address of the newly initialized object
@@ -95,11 +107,11 @@
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {
   if (self = [super init]) {
-    _itemName = [aDecoder decodeObjectForKey:@"itemName"];
-    _serialNumber = [aDecoder decodeObjectForKey:@"serialNumber"];
-    _dateCreated = [aDecoder decodeObjectForKey:@"dateCreated"];
-    _itemKey = [aDecoder decodeObjectForKey:@"itemKey"];
-    _valueInDollars = [aDecoder decodeIntForKey:@"valueInDollars"];
+    self.itemName = [aDecoder decodeObjectForKey:@"itemName"];
+    self.serialNumber = [aDecoder decodeObjectForKey:@"serialNumber"];
+    self.dateCreated = [aDecoder decodeObjectForKey:@"dateCreated"];
+    self.itemKey = [aDecoder decodeObjectForKey:@"itemKey"];
+    self.valueInDollars = [aDecoder decodeIntForKey:@"valueInDollars"];
   }
   return self;
 }

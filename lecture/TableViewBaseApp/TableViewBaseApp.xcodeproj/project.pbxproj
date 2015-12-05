@@ -17,8 +17,10 @@
 		3F55D9011BF7BFBB0075B334 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F55D9001BF7BFBB0075B334 /* Assets.xcassets */; };
 		3F55D9041BF7BFBB0075B334 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F55D9021BF7BFBB0075B334 /* LaunchScreen.storyboard */; };
 		3F55D90D1BF7C0A50075B334 /* ItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F55D90C1BF7C0A50075B334 /* ItemsViewController.m */; };
-		3F55D9101BF7C4880075B334 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F55D90F1BF7C4880075B334 /* Item.m */; };
 		3F55D9131BF7C51B0075B334 /* ItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F55D9121BF7C51B0075B334 /* ItemStore.m */; };
+		3FF4E9EE1C0A39E7009781D8 /* TableViewBaseApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FF4E9EC1C0A39E7009781D8 /* TableViewBaseApp.xcdatamodeld */; };
+		3FF4E9F31C0A3E36009781D8 /* Item+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF4E9F01C0A3E36009781D8 /* Item+CoreDataProperties.m */; };
+		3FF4E9F41C0A3E36009781D8 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF4E9F21C0A3E36009781D8 /* Item.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,10 +41,13 @@
 		3F55D9051BF7BFBB0075B334 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F55D90B1BF7C0A50075B334 /* ItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemsViewController.h; sourceTree = "<group>"; };
 		3F55D90C1BF7C0A50075B334 /* ItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemsViewController.m; sourceTree = "<group>"; };
-		3F55D90E1BF7C4880075B334 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
-		3F55D90F1BF7C4880075B334 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
 		3F55D9111BF7C51B0075B334 /* ItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemStore.h; sourceTree = "<group>"; };
 		3F55D9121BF7C51B0075B334 /* ItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemStore.m; sourceTree = "<group>"; };
+		3FF4E9ED1C0A39E7009781D8 /* TableViewBaseApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TableViewBaseApp.xcdatamodel; sourceTree = "<group>"; };
+		3FF4E9EF1C0A3E36009781D8 /* Item+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Item+CoreDataProperties.h"; sourceTree = "<group>"; };
+		3FF4E9F01C0A3E36009781D8 /* Item+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Item+CoreDataProperties.m"; sourceTree = "<group>"; };
+		3FF4E9F11C0A3E36009781D8 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		3FF4E9F21C0A3E36009781D8 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +80,6 @@
 		3F55D8F31BF7BFBB0075B334 /* TableViewBaseApp */ = {
 			isa = PBXGroup;
 			children = (
-				3F55D90E1BF7C4880075B334 /* Item.h */,
-				3F55D90F1BF7C4880075B334 /* Item.m */,
 				3F55D8F71BF7BFBB0075B334 /* AppDelegate.h */,
 				3F55D8F81BF7BFBB0075B334 /* AppDelegate.m */,
 				3F55D90B1BF7C0A50075B334 /* ItemsViewController.h */,
@@ -94,7 +97,12 @@
 				3F55D9001BF7BFBB0075B334 /* Assets.xcassets */,
 				3F55D9021BF7BFBB0075B334 /* LaunchScreen.storyboard */,
 				3F55D9051BF7BFBB0075B334 /* Info.plist */,
+				3FF4E9EC1C0A39E7009781D8 /* TableViewBaseApp.xcdatamodeld */,
 				3F55D8F41BF7BFBB0075B334 /* Supporting Files */,
+				3FF4E9EF1C0A3E36009781D8 /* Item+CoreDataProperties.h */,
+				3FF4E9F01C0A3E36009781D8 /* Item+CoreDataProperties.m */,
+				3FF4E9F11C0A3E36009781D8 /* Item.h */,
+				3FF4E9F21C0A3E36009781D8 /* Item.m */,
 			);
 			path = TableViewBaseApp;
 			sourceTree = "<group>";
@@ -178,8 +186,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F55D9101BF7C4880075B334 /* Item.m in Sources */,
+				3FF4E9F41C0A3E36009781D8 /* Item.m in Sources */,
+				3FF4E9F31C0A3E36009781D8 /* Item+CoreDataProperties.m in Sources */,
 				3F55D8FC1BF7BFBB0075B334 /* ViewController.m in Sources */,
+				3FF4E9EE1C0A39E7009781D8 /* TableViewBaseApp.xcdatamodeld in Sources */,
 				3F54D7C51BF9162300442F72 /* ItemDetailViewController.m in Sources */,
 				3F55D9131BF7C51B0075B334 /* ItemStore.m in Sources */,
 				3F55D90D1BF7C0A50075B334 /* ItemsViewController.m in Sources */,
@@ -327,6 +337,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3FF4E9EC1C0A39E7009781D8 /* TableViewBaseApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3FF4E9ED1C0A39E7009781D8 /* TableViewBaseApp.xcdatamodel */,
+			);
+			currentVersion = 3FF4E9ED1C0A39E7009781D8 /* TableViewBaseApp.xcdatamodel */;
+			path = TableViewBaseApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3F55D8E91BF7BFBB0075B334 /* Project object */;
 }
